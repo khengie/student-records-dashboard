@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records - SRMS</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        /* Notification Bar Style */
+        .notification-bar {
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            position: relative;
+        }
+        .notification-bar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: normal;
+        }
+        .notification-bar a:hover {
+            text-decoration: underline;
+        }
+        /* Container for all content */
+        .records-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        /* Header */
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #007bff;
+        }
+        /* Button Styles */
+        .home-button, .admin-button, .faculty-button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 1rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .home-button {
+            background-color: #28a745;
+        }
+        .home-button:hover {
+            background-color: #218838;
+        }
+        .admin-button {
+            background-color: #ff5722;
+        }
+        .admin-button:hover {
+            background-color: #e64a19;
+        }
+        .faculty-button {
+            background-color: #007bff;
+        }
+        .faculty-button:hover {
+            background-color: #0056b3;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .home-button, .admin-button, .faculty-button {
+                width: 100%;
+                padding: 12px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Notification Bar -->
+    <div class="notification-bar">
+        <span>🚨A faculty added a grade for Henriek Andrada, Check them out now!</span>
+        <a href="admin_dashboard.html">Learn more</a>
+    </div>
+
+    <div class="records-container">
+        <a href="dashboard.html" class="home-button">Back to Dashboard</a>
+        <h2>Student Records - SRMS</h2>
+
+        <!-- Admin Options: For Registrar to manage student records, add students, and other tasks -->
+        <a href="admin_dashboard.html" class="admin-button">Manage Student Records (Registrar)</a>
+
+        <!-- Faculty Options: Faculty can input grades and monitor student progress -->
+        <a href="faculty_dashboard.html" class="faculty-button">Input Grades (Faculty)</a>
+    </div>
+
+</body>
+</html>

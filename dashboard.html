@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        .card {
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .card h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .actions .button {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Records Dashboard</h1>
+
+        <!-- Card Section 1 -->
+        <div class="card">
+            <h2>Welcome to the Student Records Management System</h2>
+            <p>Manage student records, view detailed information, update grades, and more. Select an option below to proceed.</p>
+            <div class="actions">
+                <a href="index.html" class="button">View Student Records</a>
+                <a href="add-student.html" class="button">Add New Student</a>
+            </div>
+        </div>
+
+        <!-- Card Section 2 - Statistics & Reports -->
+        <div class="card">
+            <h2>Statistics & Reports</h2>
+            <p>Generate reports, track academic progress, and monitor performance trends over time. Select an option below to view reports or statistics:</p>
+            <div class="actions">
+                <a href="report.html" class="button">View Reports</a>
+            </div>
+        </div>
+
+        <!-- Card Section 3 -->
+        <div class="card">
+            <h2>System Settings</h2>
+            <p>Manage system settings, configure access permissions, and perform other administrative tasks.</p>
+            <div class="actions">
+                <a href="settings.html" class="button">System Settings</a>
+            </div>
+        </div>
+
+        <!-- Card Section 4 - Students -->
+        <div class="card">
+            <h2>Students</h2>
+            <p>Students can view their own records and request services such as transcripts, grades, and enrollment verifications. Select an option below to proceed.</p>
+            <div class="actions">
+                <a href="view-my-records.html" class="button">View My Records</a>
+                <a href="request-services.html" class="button">Request Services</a>
+            </div>
+        </div>
+
+        <!-- Card Section 5 - Audit Log -->
+        <div class="card">
+            <h2>Audit Log</h2>
+            <p>View the audit log of system activities, such as changes to records, student activity, and more. This log helps in tracking system usage and administrative actions.</p>
+            <div class="actions">
+                <a href="audit-log.html" class="button">View Audit Log</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
